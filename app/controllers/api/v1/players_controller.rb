@@ -1,4 +1,6 @@
-class PlayersController < ApplicationController
+#frozen_string_literal: true
+
+class Api::V1::PlayersController < ApplicationController
   before_action :set_player, only: %i[ show update destroy ]
 
   # GET /players

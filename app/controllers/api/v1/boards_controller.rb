@@ -1,4 +1,6 @@
-class BoardsController < ApplicationController
+#frozen_string_literal: true
+
+class Api::V1::BoardsController < ApplicationController
   before_action :set_board, only: %i[ show update destroy ]
 
   # GET /boards

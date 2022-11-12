@@ -1,4 +1,6 @@
-class GamesController < ApplicationController
+#frozen_string_literal: true
+
+class Api::V1::GamesController < ApplicationController
   before_action :set_game, only: %i[ show update destroy ]
 
   # GET /games

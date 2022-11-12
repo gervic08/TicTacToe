@@ -9,7 +9,7 @@ class Board < ApplicationRecord
   end
 
   def position_empty?(position)
-    return true if self.grids[position[0]][position[1]] = "_"
+    return true if self.grids[position[0]][position[1]] == "_"
     return false
   end
 
