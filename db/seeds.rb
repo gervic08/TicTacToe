@@ -7,6 +7,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 game1 = Game.create()
-player1 = Player.create(name: "Player 1", game_id: game1.id)
-player2 = Player.create(name: "Player 2", game_id: game1.id)
+player1 = Player.create(name: "Player 1", mark: "x", game_id: game1.id)
+player2 = Player.create(name: "Player 2", mark: "o", game_id: game1.id)
 board1 = Board.create(game_id: game1.id) 
